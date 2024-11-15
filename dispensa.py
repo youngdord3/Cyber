@@ -400,3 +400,10 @@ sniff(filter="tcp port 80", prn=packet_callback, count=10)
       Content-type: text/html; charset=UTF-8
 
 '''
+
+''' -------------------------------------------------------------------- '''
+"SQL INJECTION"
+
+#Possiamo inserire l’attacco SQL Injection inserendo
+#‘ or 1=1-- come username e password
+#Attenzione: Ad alcuni sembra andare con  ' or '='
