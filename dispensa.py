@@ -407,3 +407,8 @@ sniff(filter="tcp port 80", prn=packet_callback, count=10)
 #Possiamo inserire l’attacco SQL Injection inserendo
 #‘ or 1=1-- come username e password
 #Attenzione: Ad alcuni sembra andare con  ' or '='
+
+#ZW5jcnlwdENURntpX0g0dDNfaW5KM2M3aTBuNX0%3D
+#Si tratta di una stringa base64, ma dobbiamo togliere il %3D, in quanto attualmente si tratta di un URL.
+#Possiamo quindi provare a decodificarla, ottenendo correttamente la flag:
+#encryptCTF{i_H4t3_inJ3c7i0n5 
